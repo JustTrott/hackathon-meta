@@ -1,13 +1,13 @@
 // import "./App.css";
 import Footer from "./components/footer";
 import Header from "./components/header";
-import Frame from "./components/form";
+import MainForm from "./components/form";
 
 function App() {
 	return (
 		<div>
 			<Header />
-			<Frame />
+			<MainForm />
 			<Footer />
 		</div>
 	);

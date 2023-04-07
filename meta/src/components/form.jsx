@@ -1,3 +1,3 @@
-function Form() {}
+function MainForm() {}
 
-export default Form;
+export default MainForm;
