@@ -32,7 +32,7 @@ class App extends Component {
 			<div className="container">
 				<Header />
 				<div className="main-container">
-					<div className="main-block">
+					<div className="main-block slide-in">
 						<div className="main-text">
 							<h1 className="main-heading">
 								ДЛЯ НАС ЛУЧШЕ САМАЯ МАЛАЯ ПОМОЩЬ, ЧЕМ САМОЕ

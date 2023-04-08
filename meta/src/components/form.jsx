@@ -1,5 +1,5 @@
 import "./form.css";
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 
 class MainForm extends Component {
 	constructor() {
@@ -10,6 +10,7 @@ class MainForm extends Component {
 			selectedOption: null,
 			selectedAmount: null,
 			selectedAmountButton: null,
+			showModal: false,
 		};
 		this.onValueChange = this.onValueChange.bind(this);
 		this.formSubmit = this.formSubmit.bind(this);
@@ -25,6 +26,10 @@ class MainForm extends Component {
 			selectedOption: value,
 		});
 	}
+
+	setShowModal = (value) => {
+		this.setState({ showModal: value });
+	};
 
 	onAmountChange(event) {
 		this.setState({
@@ -51,6 +56,10 @@ class MainForm extends Component {
 
 	formSubmit(event) {
 		event.preventDefault();
+		this.setShowModal(true);
+		setTimeout(() => {
+			this.setState({ showModal: false });
+		}, 2000);
 		const { selectedOption, selectedAmount, email, name } = this.state;
 		if (selectedOption && selectedAmount && email && name) {
 			const donation = { name, email, amount: selectedAmount };
@@ -171,6 +180,14 @@ class MainForm extends Component {
 						ПОЖЕРТВОВАТЬ
 					</button>
 				</form>
+				{this.state.showModal && (
+					<div className="modal">
+						<div className="modal-content">
+							<div className="loading"></div>
+							<img src="/check.png" className="checkmark"></img>
+						</div>
+					</div>
+				)}
 			</div>
 		);
 	}

@@ -6,6 +6,24 @@
 	font-family: "Open Sans", sans-serif;
 }
 
+.slide-in {
+	animation-name: slide-in;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	opacity: 1;
+}
+
+@keyframes slide-in {
+	0% {
+		transform: translateY(-100%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
 .main-container {
 	width: 100%;
 	display: flex;
