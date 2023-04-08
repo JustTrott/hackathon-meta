@@ -1,4 +1,5 @@
 .container {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -41,9 +42,16 @@
 	.main-container,
 	.main-block {
 		flex-direction: column;
+		align-items: center;
 	}
 	.main-text {
 		text-align: center;
+	}
+	.main-heading {
+		font-size: 1.5rem;
+	}
+	.sub-heading {
+		font-size: 1rem;
 	}
 	.later-text {
 		order: -1;

@@ -60,3 +60,15 @@ a {
 	text-decoration: none;
 	cursor: pointer;
 }
+
+@media only screen and (max-width: 650px) {
+	.footer-content {
+		padding: 20px;
+	}
+	p {
+		font-size: 1rem;
+	}
+	.footer-nav ul {
+		margin-bottom: 0;
+	}
+}

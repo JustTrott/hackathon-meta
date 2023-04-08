@@ -149,3 +149,37 @@ button {
 		width: 100%;
 	}
 }
+
+@media only screen and (max-width: 550px) {
+	.frequency-options,
+	.amount-input {
+		font-size: 0.8rem;
+	}
+	.amount-button {
+		font-size: 0.9rem;
+		height: 25px;
+		padding: 0 5px;
+		min-width: 40px;
+	}
+	.amount-input {
+		width: 100px;
+		height: 25px;
+	}
+	.amounts-container {
+		margin: 10px 0;
+		gap: 10px;
+	}
+	.text-input {
+		padding: 5px 15px;
+		font-size: 1rem;
+	}
+	.form {
+		padding: 40px 30px;
+	}
+	.form-container {
+		min-height: 350px;
+	}
+	.submit-button {
+		font-size: 1rem;
+	}
+}

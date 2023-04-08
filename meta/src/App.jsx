@@ -3,6 +3,7 @@ import Footer from "./components/footer";
 import Header from "./components/header";
 import MainForm from "./components/form";
 import Leaderboard from "./components/leaderboard";
+import Background from "./components/background";
 import React, { Component } from "react";
 
 class App extends Component {
@@ -67,6 +68,7 @@ class App extends Component {
 				</div>
 
 				<Footer />
+				<Background />
 			</div>
 		);
 	}

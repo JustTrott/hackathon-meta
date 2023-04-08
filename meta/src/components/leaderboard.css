@@ -14,7 +14,7 @@
 	flex-direction: row;
 	justify-content: space-between;
 	padding: 10px 0;
-	border-bottom: 1px solid #e0e0e0;
+	border-bottom: 1px solid #767676;
 }
 
 .heading-row {
@@ -43,14 +43,35 @@
 	margin-right: 10px;
 }
 
-.gold {
-	background-color: gold;
+.gold path:first-of-type + path {
+	stroke: #b0ad67;
 }
 
-.silver {
-	background-color: silver;
+.gold path:first-of-type {
+	fill: #ffd74b;
 }
 
-.bronze {
-	background-color: #cd7f32;
+.silver path:first-of-type + path {
+	stroke: #000000;
+}
+
+.silver path:first-of-type {
+	fill: #c8c7c7;
+}
+
+.bronze path:first-of-type + path {
+	stroke: #b69159;
+}
+
+.bronze path:first-of-type {
+	fill: #e1b067;
+}
+
+@media only screen and (max-width: 650px) {
+	.leaderboard-cell {
+		font-size: 0.7rem;
+	}
+	.leaderboard-row {
+		padding: 5px;
+	}
 }

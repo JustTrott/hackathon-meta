@@ -1,0 +1,39 @@
+.ellipse-container svg {
+	position: fixed;
+	z-index: -1;
+	display: none;
+}
+
+.ellipse-container #el1 {
+	left: 0;
+	bottom: 20px;
+	display: block;
+}
+
+.ellipse-container #el2 {
+	right: 0;
+	top: 20px;
+	display: block;
+}
+
+@media only screen and (max-width: 770px) {
+	.ellipse-container #el1 {
+		display: none;
+	}
+
+	.ellipse-container #el2 {
+		display: none;
+	}
+
+	.ellipse-container #el4 {
+		left: 0;
+		bottom: 20px;
+		display: block;
+	}
+
+	.ellipse-container #el3 {
+		right: 0;
+		top: 20px;
+		display: block;
+	}
+}
