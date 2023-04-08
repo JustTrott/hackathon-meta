@@ -36,3 +36,16 @@
 .sub-heading {
 	font-weight: 400;
 }
+
+@media only screen and (max-width: 1247px) {
+	.main-container,
+	.main-block {
+		flex-direction: column;
+	}
+	.main-text {
+		text-align: center;
+	}
+	.later-text {
+		order: -1;
+	}
+}

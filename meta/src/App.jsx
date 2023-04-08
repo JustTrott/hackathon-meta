@@ -50,7 +50,7 @@ class App extends Component {
 				<div className="main-container">
 					<div className="main-block">
 						<Leaderboard donations={donations} />
-						<div className="main-text">
+						<div className="main-text later-text">
 							<h1 className="main-heading">
 								БЛАГОРОДСТВО В ДЕЙСТВИИ: ТОП-ЛИДЕРЫ ПО
 								ПОЖЕРТВОВАНИЯМ
@@ -65,6 +65,7 @@ class App extends Component {
 						</div>
 					</div>
 				</div>
+
 				<Footer />
 			</div>
 		);

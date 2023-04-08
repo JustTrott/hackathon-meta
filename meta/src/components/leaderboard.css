@@ -1,11 +1,12 @@
 .leaderboard {
-	width: 500px;
+	width: calc(90%);
+	max-width: 500px;
+	min-width: 0;
 	height: 435px;
 	background-color: rgba(240, 237, 166, 0.25);
 	border-radius: 5px;
 	padding: 20px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	overflow-y: auto;
 }
 
 .leaderboard-row {
@@ -17,7 +18,7 @@
 }
 
 .heading-row {
-	font-weight: bold;
+	font-weight: 500;
 }
 
 .leaderboard-cell {
@@ -52,18 +53,4 @@
 
 .bronze {
 	background-color: #cd7f32;
-}
-
-.leaderboard-row.disabled {
-	opacity: 0.5;
-}
-
-.disabled-button {
-	opacity: 0.5;
-	pointer-events: none;
-}
-
-.disabled-input {
-	opacity: 0.5;
-	pointer-events: none;
 }
